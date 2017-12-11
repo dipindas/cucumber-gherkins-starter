@@ -1,15 +1,11 @@
 package junitcucumber;
 
-import java.awt.List;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
 public class TestCaseStep {
 	private boolean resolveOrNot;
-	private Map<String, Object> parameterMap = new HashMap<String, Object>();
-	private Map<String, Map> steps = new HashMap<String, Map>();
-	
+	private Map<String, Object> parameterMap;
+	private Map<String, Map> step;
 	public boolean isResolveOrNot() {
 		return resolveOrNot;
 	}
@@ -22,10 +18,11 @@ public class TestCaseStep {
 	public void setParameterMap(Map<String, Object> parameterMap) {
 		this.parameterMap = parameterMap;
 	}
-	public Map<String, Map> getSteps() {
-		return steps;
+	public Map<String, Map> getStep() {
+		return step;
 	}
-	public void setSteps(Map<String, Map> steps) {
-		this.steps = steps;
+	public void setStep(Map<String, Map> step) {
+		this.step = step;
 	}
+
 }
